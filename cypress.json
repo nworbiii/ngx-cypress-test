@@ -1,6 +1,19 @@
 {
-    "baseUrl": "http://localhost:4200",
-    "ignoreTestFiles": "**/examples/*",
-    "viewportHeight": 1080,
-    "viewportWidth": 1920
+  "baseUrl": "http://localhost:4200",
+  "ignoreTestFiles": [
+    "**/examples/*",
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "viewportHeight": 1080,
+  "viewportWidth": 1920,
+  "projectId": "ddiq8u",
+  "video": true,
+  "env": {
+    "cypress-plugin-snapshots": {
+      "imageConfig": {
+        "threshold": 0.01
+      }
+    }
+  }
 }
